@@ -3,7 +3,7 @@ const path = require("path");
 const hbs = require("hbs");
 const app = express();
 const Forcast =require('./utils/forcast');
-
+const port = process.env.PORT || 3000
 app.set("views", path.join(__dirname, "../templates/views"));
 app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "../public")));
@@ -65,6 +65,6 @@ app.get('*',(req,res)=>{
     name: "Manoj Sawant",
   })
 })
-app.listen(3000, "localhost", () => {
+app.listen(port, "localhost", () => {
   console.log("Server is up on port 3000");
 });

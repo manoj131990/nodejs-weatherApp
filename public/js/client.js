@@ -1,7 +1,7 @@
 console.log("cient js loaded");
 
 function fetchForcast(location, callback){
-    fetch(`http://localhost:3000/weather?address=${location}`).then(res=>{
+    fetch(`/weather?address=${location}`).then(res=>{
         //console.log(res);
         res.json().then(data=>{
             // if(data.error){
