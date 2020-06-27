@@ -65,6 +65,6 @@ app.get('*',(req,res)=>{
     name: "Manoj Sawant",
   })
 })
-app.listen(port, "localhost", () => {
+app.listen(port, () => {
   console.log("Server is up on port 3000");
 });
