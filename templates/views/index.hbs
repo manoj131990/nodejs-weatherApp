@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Weather</title>
+    <link href="/Styles/style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/weather.png">
+</head>
+
+<body>
+    <div class="main-content">
+    {{>header}}
+    <p>Use this site to know weather condition of your city</p>
+    <form>
+      <input placeholder="Location">
+      <button>Search</button>
+      <p id="address"></p>
+      <p id="forcast"></p>
+    </form>
+  </div>
+</body>
+  {{>footer}}
+      <script src="/js/client.js"></script>
+</html>
